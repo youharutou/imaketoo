@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>会员中心-爱美兔</title>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/imt.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js" type="text/javascript"></script>
+<script src="js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript">
+var supportTouche = ("createTouch" in document);
+</script>
+</head>
+
+<body>
+  <section class="md_menu ls_menu visible-md visible-lg f_l">
+    <div class="menu_inner">
+      <div class="logo"><a href="#"><img src="images/logo.jpg" /></a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="current">首页</a></li>
+          <li><a href="category.html">个性潮品</a></li>
+          <li><a href="goods.html">我要制作</a></li>
+          <li><a href="usercenter.html">我的账户</a></li>
+          <li><a href="#">关于我们</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="foot">
+      <div class="u_entran">
+        <a href="login.html">登录</a>
+        <a href="register.html">注册</a>
+      </div>
+      <div class="atten">
+        <a href="#" class="sina"><img src="images/sina.png" /></a>
+        <a href="#" class="qq_zone"><img src="images/qq_zone.png" /></a>
+        <a href="#" class="txwb"><img src="images/txwb.png" /></a>
+      </div>
+      <footer><p class="copyright">©2014 imaketoo.com,All Rights Reserved.</p></footer>
+    </div>
+  </section>
+  <section class="sm_menu visible-sm">
+    <div class="col-sm-3 logo"><a href="#"><img src="images/logo.jpg" class="img-responsive" /></a></div>
+    <div class="col-sm-7">
+      <nav>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="category.html">个性潮品</a></li>
+          <li><a href="goods.html">我要制作</a></li>
+          <li>
+            <a href="javascript:void(0);" onClick="showMenu(this,event)">我的账户</a>
+            <div class="account_list">
+              <a href="usercenter.html">会员中心</a>
+              <a href="login.html">登录</a>
+              <a href="register.html">注册</a>
+            </div>
+          </li>
+          <li><a href="#">关于我们</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-sm-2 atten" style="padding:0 !important;">
+      <a href="#" class="txwb"><img src="images/txwb.png" /></a>
+      <a href="#" class="qq_zone"><img src="images/qq_zone.png" /></a>
+      <a href="#" class="sina"><img src="images/sina.png" /></a>
+    </div>
+  </section>
+  <section class="xs_menu visible-xs clearfix blank3" style="margin-bottom: 0 !important;">
+    <div class="row no_margin">
+      <div class="col-xs-8 logo col-xs-offset-2"><a href="#"><img src="images/logo.jpg" class="img-responsive" /></a></div>
+    </div>
+    <div class="menu_trigger"><a href="javascript:void(0);" class="menu_icon"><span>Menu</span></a></div>
+    <div class="xs_menu_list col-xs-12">
+      <ul>
+        <li><a href="index.html" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">首页</a></li>
+        <li><a href="category.html">个性潮品</a></li>
+        <li><a href="goods.html">我要制作</a></li>
+        <li><a href="usercenter.html">我的账户</a></li>
+        <li><a href="#" style="border-bottom:none; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">关于我们</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="md_main_part visible-md visible-lg">
+    <div class="section uc_index">
+      <h1 class="hd blank3">会员中心</h1>
+      <div class="bd">
+        <div class="clearfix">
+          <img src="images/touxiang.jpg" class="avatar f_l" />
+          <h3><span class="uc_name">yang_3cd</span> 欢迎回到 爱美兔！</h3>
+          上一次登录时间: <span class="fc4">2014-03-07 10:22:29</span><br />
+          会员等级: <span class="fc4">注册用户</span>
+        </div>
+        您还没有通过邮件认证: <a href="#">点此发送认证邮件>></a><br />
+        账户余额: <a href="#">￥0.00元</a><br />
+        红包: <a href="#">共计 0 个</a><br />
+        积分: <span class="fc4">44积分</span><br />
+        30天内提交了 <span class="fc4">0</span> 个订单
+      </div>
+      <ul class="uc_menu">
+        <li class="current">我的订单</li>
+        <li>会员信息</li>
+        <li>收货地址</li>
+        <li>我的收藏</li>
+        <li>我的评论</li>
+      </ul>
+    </div>
+    <div class="uc_pc_win">
+      <div class="uc_item uc_orders">
+        <h2>我的订单</h2>
+        <table width="100%" class="tc">
+          <tr>
+            <th class="tc">订单号</th>
+            <th class="tc">下单时间</th>
+            <th class="tc">订单总金额</th>
+            <th class="tc">订单状态</th>
+            <th class="tc">操作</th>
+          </tr>
+          <tr>
+            <td><a href="#">2013123066946</a></td>
+            <td>2013-12-30 21:03:40</td>
+            <td class="fc4">￥350.00</td>
+            <td>未确认,未付款,未发货</td>
+            <td><a href="#">取消订单</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">2013123066946</a></td>
+            <td>2013-12-30 21:03:40</td>
+            <td class="fc4">￥350.00</td>
+            <td>未确认,未付款,未发货</td>
+            <td><a href="#">取消订单</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">2013123066946</a></td>
+            <td>2013-12-30 21:03:40</td>
+            <td class="fc4">￥350.00</td>
+            <td>未确认,未付款,未发货</td>
+            <td><a href="#">取消订单</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">2013123066946</a></td>
+            <td>2013-12-30 21:03:40</td>
+            <td class="fc4">￥350.00</td>
+            <td>未确认,未付款,未发货</td>
+            <td><a href="#">取消订单</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">2013123066946</a></td>
+            <td>2013-12-30 21:03:40</td>
+            <td class="fc4">￥350.00</td>
+            <td>未确认,未付款,未发货</td>
+            <td><a href="#">取消订单</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">2013123066946</a></td>
+            <td>2013-12-30 21:03:40</td>
+            <td class="fc4">￥350.00</td>
+            <td>未确认,未付款,未发货</td>
+            <td><a href="#">取消订单</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">2013123066946</a></td>
+            <td>2013-12-30 21:03:40</td>
+            <td class="fc4">￥350.00</td>
+            <td>未确认,未付款,未发货</td>
+            <td><a href="#">取消订单</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">2013123066946</a></td>
+            <td>2013-12-30 21:03:40</td>
+            <td class="fc4">￥350.00</td>
+            <td>未确认,未付款,未发货</td>
+            <td><a href="#">取消订单</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">2013123066946</a></td>
+            <td>2013-12-30 21:03:40</td>
+            <td class="fc4">￥350.00</td>
+            <td>未确认,未付款,未发货</td>
+            <td><a href="#">取消订单</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">2013123066946</a></td>
+            <td>2013-12-30 21:03:40</td>
+            <td class="fc4">￥350.00</td>
+            <td>未确认,未付款,未发货</td>
+            <td><a href="#">取消订单</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="uc_item uc_info">
+        <h2>会员信息</h2>
+        <form name="formEdit" method="post">
+          <h3>个人资料</h3>
+          <table width="100%">
+            <tr>
+              <td width="35%" class="tr">出生日期：</td>
+              <td width="65%">
+                <select>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                </select>
+                <select>
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                </select>
+                <select>
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">性别：</td>
+              <td>
+                <input type="radio" checked />保密 <input type="radio" />男 <input type="radio" />女
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">电子邮箱：</td>
+              <td>
+                <input type="text" class="inputstyle" />
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">MSN：</td>
+              <td>
+                <input type="text" class="inputstyle" />
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">QQ：</td>
+              <td>
+                <input type="text" class="inputstyle" />
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">办公电话：</td>
+              <td>
+                <input type="text" class="inputstyle" />
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">家庭电话：</td>
+              <td>
+                <input type="text" class="inputstyle" />
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">手机：</td>
+              <td>
+                <input type="text" class="inputstyle" />
+              </td>
+            </tr>
+            <tr>
+              <td class="tr"></td>
+              <td>
+                <input type="submit" class="submit_btn" value="确认修改" />
+              </td>
+            </tr>
+          </table>
+        </form>
+        <form name="formPassword" method="post">
+          <h3 style="margin-top: 20px;">修改密码</h3>
+          <table width="100%">
+            <tr>
+              <td width="35%" class="tr">原密码：</td>
+              <td width="65%">
+                <input type="text" class="inputstyle" />
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">新密码：</td>
+              <td>
+                <input type="text" class="inputstyle" />
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">确认密码：</td>
+              <td>
+                <input type="text" class="inputstyle" />
+              </td>
+            </tr>
+            <tr>
+              <td class="tr"></td>
+              <td>
+                <input type="submit" class="submit_btn" value="确认修改" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="uc_item uc_address">
+        <h2>收货地址</h2>
+        <form name="theForm" method="post">
+          <h3>收货地址一</h3>
+          <table width="100%">
+            <tr>
+              <td width="33%" class="tr">配送区域：</td>
+              <td width="67%">
+                <select>
+                  <option value="0">请选择国家</option>
+                  <option value="1" selected>中国</option>
+                </select>
+                <select>
+                  <option value="0">请选择省</option>
+                  <option value="1" selected>广东</option>
+                  <option value="2">广西</option>
+                </select>
+                <select>
+                  <option value="0">请选择市</option>
+                  <option value="1" selected>东莞</option>
+                  <option value="2">广州</option>
+                </select>
+                <select>
+                  <option value="0">请选择区</option>
+                  <option value="1" selected>南城区</option>
+                  <option value="2">东城区</option>
+                </select> (必填)
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">收货人：</td>
+              <td>
+                <input type="text" class="inputstyle" /> (必填)
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">Email：</td>
+              <td>
+                <input type="text" class="inputstyle" /> (必填)
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">详细地址：</td>
+              <td>
+                <input type="text" class="inputstyle" /> (必填)
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">电话：</td>
+              <td>
+                <input type="text" class="inputstyle" /> (必填)
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="submit" value="确认修改" class="submit_btn" />
+                <input type="button" value="删除" class="del_btn" />
+              </td>
+            </tr>
+          </table>
+        </form>
+        <form name="theForm" method="post">
+          <h3 style="margin-top: 20px;">新增收货地址</h3>
+          <table width="100%">
+            <tr>
+              <td width="33%" class="tr">配送区域：</td>
+              <td width="67%">
+                <select>
+                  <option value="0" selected>请选择国家</option>
+                  <option value="1">中国</option>
+                </select>
+                <select>
+                  <option value="0" selected>请选择省</option>
+                  <option value="1">广东</option>
+                  <option value="2">广西</option>
+                </select>
+                <select>
+                  <option value="0" selected>请选择市</option>
+                  <option value="1">东莞</option>
+                  <option value="2">广州</option>
+                </select> (必填)
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">收货人：</td>
+              <td>
+                <input type="text" class="inputstyle" /> (必填)
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">Email：</td>
+              <td>
+                <input type="text" class="inputstyle" /> (必填)
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">详细地址：</td>
+              <td>
+                <input type="text" class="inputstyle" /> (必填)
+              </td>
+            </tr>
+            <tr>
+              <td class="tr">电话：</td>
+              <td>
+                <input type="text" class="inputstyle" /> (必填)
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="submit" value="新增收货地址" class="submit_btn" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="uc_item uc_collect">
+        <h2>我的收藏</h2>
+        <table width="100%" class="tc">
+          <tr>
+            <th width="45%" class="tc">商品名称</th>
+            <th width="22%" class="tc">价格</th>
+            <th width="33%" class="tc">操作</th>
+          </tr>
+          <tr>
+            <td><a href="#">Uniform Wares 经典104橙色系列</a></td>
+            <td class="fc4">￥760.00</td>
+            <td><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Uniform Wares 经典104蓝色系列</a></td>
+            <td class="fc4">￥760.00</td>
+            <td><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Uniform Wares 经典104红色系列</a></td>
+            <td class="fc4">￥760.00</td>
+            <td><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Uniform Wares 经典104白色系列</a></td>
+            <td class="fc4">￥760.00</td>
+            <td><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Uniform Wares 经典104黑色系列</a></td>
+            <td class="fc4">￥760.00</td>
+            <td><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="uc_item uc_review">
+        <h2>我的评论</h2>
+        <ul>
+          <li>
+            <div class="review_tit blank1">
+              商品评论： <a href="#" class="gs_name">Uniform Wares 经典104黑色系列</a><span class="the_time">2013-12-30 21:01:40</span><a href="#" class="del">删除</a>
+            </div>
+            <div class="review_ct">贼哈哈哈哈...</div>
+          </li>
+          <li>
+            <div class="review_tit blank1">
+              商品评论： <a href="#" class="gs_name">Uniform Wares 经典104黑色系列</a><span class="the_time">2013-12-30 21:01:40</span><a href="#" class="del">删除</a>
+            </div>
+            <div class="review_ct">贼哈哈哈哈...</div>
+          </li>
+          <li>
+            <div class="review_tit blank1">
+              商品评论： <a href="#" class="gs_name">Uniform Wares 经典104黑色系列</a><span class="the_time">2013-12-30 21:01:40</span><a href="#" class="del">删除</a>
+            </div>
+            <div class="review_ct">贼哈哈哈哈...</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="xsm_main_part visible-xs visible-sm clearfix">
+    <div class="col-xs-12 col-sm-12">
+      <h1 class="xsm_uc_hd">会员中心</h1>
+      <div class="uc_tabs">
+        <ul class="tab_list clearfix">
+          <li class="current">会员首页</li>
+          <li>会员信息</li>
+          <li>收货地址</li>
+          <li>我的订单</li>
+          <li>我的收藏</li>
+          <li>我的评论</li>
+        </ul>
+      </div>
+      <div class="uc_ct">
+        <div id="uc_ct_list" class="clearfix">
+          <div class="uc_ct_item uc_ct_index">
+            <div class="clearfix">
+              <img src="images/touxiang.jpg" class="avatar f_l" />
+              <h3 style="text-indent: 0;"><span class="uc_name">yang_3cd</span> 欢迎回到 爱美兔！</h3>
+              上一次登录时间: <span class="fc4">2014-03-07 10:22:29</span><br />
+              会员等级: <span class="fc4">注册用户</span>
+            </div>
+            您还没有通过邮件认证: <a href="#">点此发送认证邮件>></a>
+            <div class="base_info clearfix">
+              <div class="f_l" style="width: 45%;">
+                <h4><strong>您的账户</strong></h4>
+                账户余额: <a href="#">￥0.00元</a><br />
+                红包: <a href="#">共计 0 个</a><br />
+                积分: <span class="fc4">44积分</span>
+              </div>
+              <div class="f_r" style="width: 45%;">
+                <h4><strong>会员提醒</strong></h4>
+                30天内提交了 <span class="fc4">0</span> 个订单
+              </div>
+            </div>
+          </div>
+          <div class="uc_ct_item uc_ct_info">
+            <form name="formEdit" method="post">
+              <h3>个人资料</h3>
+              <table width="100%">
+                <tr>
+                  <td width="30%" class="tr">出生日期：</td>
+                  <td width="70%">
+                    <select>
+                      <option value="2013">2013</option>
+                      <option value="2014">2014</option>
+                    </select>
+                    <select>
+                      <option value="1">01</option>
+                      <option value="2">02</option>
+                    </select>
+                    <select>
+                      <option value="1">01</option>
+                      <option value="2">02</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">性别：</td>
+                  <td>
+                    <input type="radio" checked />保密 <input type="radio" />男 <input type="radio" />女
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">电子邮箱：</td>
+                  <td>
+                    <input type="text" class="inputstyle" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">MSN：</td>
+                  <td>
+                    <input type="text" class="inputstyle" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">QQ：</td>
+                  <td>
+                    <input type="text" class="inputstyle" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">办公电话：</td>
+                  <td>
+                    <input type="text" class="inputstyle" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">家庭电话：</td>
+                  <td>
+                    <input type="text" class="inputstyle" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">手机：</td>
+                  <td>
+                    <input type="text" class="inputstyle" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr"></td>
+                  <td>
+                    <input type="submit" class="submit_btn" value="确认修改" />
+                  </td>
+                </tr>
+              </table>
+            </form>
+            <form name="formPassword" method="post">
+              <h3 style="margin-top: 20px;">修改密码</h3>
+              <table width="100%">
+                <tr>
+                  <td width="30%" class="tr">原密码：</td>
+                  <td width="70%">
+                    <input type="text" class="inputstyle" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">新密码：</td>
+                  <td>
+                    <input type="text" class="inputstyle" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">确认密码：</td>
+                  <td>
+                    <input type="text" class="inputstyle" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr"></td>
+                  <td>
+                    <input type="submit" class="submit_btn" value="确认修改" />
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          <div class="uc_ct_item uc_ct_address">
+            <form name="theForm" method="post">
+              <h3>收货地址一</h3>
+              <table width="100%">
+                <tr>
+                  <td width="25%" class="tr">配送区域：</td>
+                  <td width="75%">
+                    <select>
+                      <option value="0">请选择国家</option>
+                      <option value="1" selected>中国</option>
+                    </select>
+                    <select>
+                      <option value="0">请选择省</option>
+                      <option value="1" selected>广东</option>
+                      <option value="2">广西</option>
+                    </select>
+                    <select>
+                      <option value="0">请选择市</option>
+                      <option value="1" selected>东莞</option>
+                      <option value="2">广州</option>
+                    </select>
+                    <select>
+                      <option value="0">请选择区</option>
+                      <option value="1" selected>南城区</option>
+                      <option value="2">东城区</option>
+                    </select> (必填)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">收货人：</td>
+                  <td>
+                    <input type="text" class="inputstyle" /> (必填)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">Email：</td>
+                  <td>
+                    <input type="text" class="inputstyle" /> (必填)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">详细地址：</td>
+                  <td>
+                    <input type="text" class="inputstyle" /> (必填)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">电话：</td>
+                  <td>
+                    <input type="text" class="inputstyle" /> (必填)
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <input type="submit" value="确认修改" class="submit_btn" />
+                    <input type="button" value="删除" class="del_btn" />
+                  </td>
+                </tr>
+              </table>
+            </form>
+            <form name="theForm" method="post">
+              <h3 style="margin-top: 20px;">新增收货地址</h3>
+              <table width="100%">
+                <tr>
+                  <td width="25%" class="tr">配送区域：</td>
+                  <td width="75%">
+                    <select>
+                      <option value="0" selected>请选择国家</option>
+                      <option value="1">中国</option>
+                    </select>
+                    <select>
+                      <option value="0" selected>请选择省</option>
+                      <option value="1">广东</option>
+                      <option value="2">广西</option>
+                    </select>
+                    <select>
+                      <option value="0" selected>请选择市</option>
+                      <option value="1">东莞</option>
+                      <option value="2">广州</option>
+                    </select> (必填)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">收货人：</td>
+                  <td>
+                    <input type="text" class="inputstyle" /> (必填)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">Email：</td>
+                  <td>
+                    <input type="text" class="inputstyle" /> (必填)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">详细地址：</td>
+                  <td>
+                    <input type="text" class="inputstyle" /> (必填)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr">电话：</td>
+                  <td>
+                    <input type="text" class="inputstyle" /> (必填)
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <input type="submit" value="新增收货地址" class="submit_btn" />
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          <div class="uc_ct_item uc_ct_orders">
+            <table width="100%" class="tc sm_orders">
+              <tr>
+                <th class="tc">订单号</th>
+                <th class="tc">下单时间</th>
+                <th class="tc">订单总金额</th>
+                <th class="tc">订单状态</th>
+                <th class="tc">操作</th>
+              </tr>
+              <tr>
+                <td><a href="#">2013123066946</a></td>
+                <td>2013-12-30 21:03:40</td>
+                <td class="fc4">￥350.00</td>
+                <td>未确认,未付款,未发货</td>
+                <td><a href="#">取消订单</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">2013123066946</a></td>
+                <td>2013-12-30 21:03:40</td>
+                <td class="fc4">￥350.00</td>
+                <td>未确认,未付款,未发货</td>
+                <td><a href="#">取消订单</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">2013123066946</a></td>
+                <td>2013-12-30 21:03:40</td>
+                <td class="fc4">￥350.00</td>
+                <td>未确认,未付款,未发货</td>
+                <td><a href="#">取消订单</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">2013123066946</a></td>
+                <td>2013-12-30 21:03:40</td>
+                <td class="fc4">￥350.00</td>
+                <td>未确认,未付款,未发货</td>
+                <td><a href="#">取消订单</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">2013123066946</a></td>
+                <td>2013-12-30 21:03:40</td>
+                <td class="fc4">￥350.00</td>
+                <td>未确认,未付款,未发货</td>
+                <td><a href="#">取消订单</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">2013123066946</a></td>
+                <td>2013-12-30 21:03:40</td>
+                <td class="fc4">￥350.00</td>
+                <td>未确认,未付款,未发货</td>
+                <td><a href="#">取消订单</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">2013123066946</a></td>
+                <td>2013-12-30 21:03:40</td>
+                <td class="fc4">￥350.00</td>
+                <td>未确认,未付款,未发货</td>
+                <td><a href="#">取消订单</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">2013123066946</a></td>
+                <td>2013-12-30 21:03:40</td>
+                <td class="fc4">￥350.00</td>
+                <td>未确认,未付款,未发货</td>
+                <td><a href="#">取消订单</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">2013123066946</a></td>
+                <td>2013-12-30 21:03:40</td>
+                <td class="fc4">￥350.00</td>
+                <td>未确认,未付款,未发货</td>
+                <td><a href="#">取消订单</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">2013123066946</a></td>
+                <td>2013-12-30 21:03:40</td>
+                <td class="fc4">￥350.00</td>
+                <td>未确认,未付款,未发货</td>
+                <td><a href="#">取消订单</a></td>
+              </tr>
+            </table>
+            <div class="xs_orders">
+              <table width="100%">
+                <tr>
+                  <th width="50%" class="tc">订单号</th>
+                  <th width="50%" class="tc">下单时间</th>
+                </tr>
+              </table>
+              <table width="100%" class="tc">
+                <tr class="tr_border">
+                  <td width="50%"><a href="#">2013123066946</a></td>
+                  <td width="50%">2013-12-30 21:03:40</td>
+                </tr>
+              </table>
+              <table width="100%" class="tc">
+                <tr>
+                  <td width="25%" class="fc4">￥350.00<br />(订单金额)</td>
+                  <td width="50%">未确认,未付款,未发货<br />(订单状态)</td>
+                  <td width="25%"><a href="#">取消订单</a></td>
+                </tr>
+              </table>
+              <table width="100%" class="tc">
+                <tr class="tr_border">
+                  <td width="50%"><a href="#">2013123066946</a></td>
+                  <td width="50%">2013-12-30 21:03:40</td>
+                </tr>
+              </table>
+              <table width="100%" class="tc">
+                <tr>
+                  <td width="25%" class="fc4">￥350.00<br />(订单金额)</td>
+                  <td width="50%">未确认,未付款,未发货<br />(订单状态)</td>
+                  <td width="25%"><a href="#">取消订单</a></td>
+                </tr>
+              </table>
+              <table width="100%" class="tc">
+                <tr class="tr_border">
+                  <td width="50%"><a href="#">2013123066946</a></td>
+                  <td width="50%">2013-12-30 21:03:40</td>
+                </tr>
+              </table>
+              <table width="100%" class="tc">
+                <tr>
+                  <td width="25%" class="fc4">￥350.00<br />(订单金额)</td>
+                  <td width="50%">未确认,未付款,未发货<br />(订单状态)</td>
+                  <td width="25%"><a href="#">取消订单</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="clearfix">
+              <div class="pages f_r">
+                <span>1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+              </div>
+            </div>
+          </div>
+          <div class="uc_ct_item uc_ct_collect">
+            <table width="100%" class="sm_collect tc">
+              <tr>
+                <th width="48%" class="tc">商品名称</th>
+                <th width="20%" class="tc">价格</th>
+                <th width="32%" class="tc">操作</th>
+              </tr>
+              <tr>
+                <td><a href="#">Uniform Wares 经典104橙色系列</a></td>
+                <td class="fc4">￥760.00</td>
+                <td><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Uniform Wares 经典104蓝色系列</a></td>
+                <td class="fc4">￥760.00</td>
+                <td><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Uniform Wares 经典104红色系列</a></td>
+                <td class="fc4">￥760.00</td>
+                <td><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Uniform Wares 经典104白色系列</a></td>
+                <td class="fc4">￥760.00</td>
+                <td><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Uniform Wares 经典104黑色系列</a></td>
+                <td class="fc4">￥760.00</td>
+                <td><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+              </tr>
+            </table>
+            <table width="100%" class="xs_collect tc">
+              <tr>
+                <th colspan="2" class="tc">商品名称</th>
+              </tr>
+              <tr class="tr_border">
+                <td colspan="2"><a href="#">Uniform Wares 经典104橙色系列</a></td>
+              </tr>
+              <tr>
+                <td width="42%" class="fc4 tr">￥760.00</td>
+                <td width="58%" class="tl"><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+              </tr>
+              <tr class="tr_border">
+                <td colspan="2"><a href="#">Uniform Wares 经典104橙色系列</a></td>
+              </tr>
+              <tr>
+                <td width="42%" class="fc4 tr">￥760.00</td>
+                <td width="58%" class="tl"><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+              </tr>
+              <tr class="tr_border">
+                <td colspan="2"><a href="#">Uniform Wares 经典104橙色系列</a></td>
+              </tr>
+              <tr>
+                <td width="42%" class="fc4 tr">￥760.00</td>
+                <td width="58%" class="tl"><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+              </tr>
+              <tr class="tr_border">
+                <td colspan="2"><a href="#">Uniform Wares 经典104橙色系列</a></td>
+              </tr>
+              <tr>
+                <td width="42%" class="fc4 tr">￥760.00</td>
+                <td width="58%" class="tl"><a href="#">加入购物车</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+              </tr>
+            </table>
+            <div class="clearfix">
+              <div class="pages f_r">
+                <span>1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+              </div>
+            </div>
+          </div>
+          <div class="uc_ct_item uc_ct_review">
+            <ul>
+              <li>
+                <div class="review_tit blank1">
+                  商品评论： <a href="#" class="gs_name">Uniform Wares 经典104黑色系列</a><span class="the_time">2013-12-30 21:01:40</span><a href="#" class="del">删除</a>
+                </div>
+                <div class="review_ct">贼哈哈哈哈...</div>
+              </li>
+              <li>
+                <div class="review_tit blank1">
+                  商品评论： <a href="#" class="gs_name">Uniform Wares 经典104黑色系列</a><span class="the_time">2013-12-30 21:01:40</span><a href="#" class="del">删除</a>
+                </div>
+                <div class="review_ct">贼哈哈哈哈...</div>
+              </li>
+              <li>
+                <div class="review_tit blank1">
+                  商品评论： <a href="#" class="gs_name">Uniform Wares 经典104黑色系列</a><span class="the_time">2013-12-30 21:01:40</span><a href="#" class="del">删除</a>
+                </div>
+                <div class="review_ct">贼哈哈哈哈...</div>
+              </li>
+            </ul>
+            <div class="clearfix">
+              <div class="pages f_r">
+                <span>1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="xs_foot visible-xs clearfix">
+      <div class="col-xs-12 u_entran">
+        <a href="login.html">登录</a>
+        <a href="register.html">注册</a>
+      </div>
+      <div class="col-xs-12 atten">
+        <a href="#" class="sina"><img src="images/xs_sina.png" /></a>
+        <a href="#" class="qq_zone"><img src="images/xs_qq_zone.png" /></a>
+        <a href="#" class="txwb"><img src="images/xs_txwb.png" /></a>
+      </div>
+      <div class="col-xs-12">©2014 imaketoo.com,All Rights Reserved.</div>
+  </section>
+<script type="text/javascript" src="js/user.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".menu_trigger").click(function(event){
+		$(".xs_menu_list").fadeToggle(200);
+		event.stopPropagation();
+	});
+	$(".atten a").hover(function(){
+		$("img",this).stop().fadeOut(300);
+	},function(){
+		$("img",this).fadeIn(300);
+	});
+	$("body").click(function(){
+		$(".xs_menu_list,.account_list").hide();
+		$(".account_list").prev().removeClass("current");
+	});
+});
+</script>
+<!--<div class="testdatas" style="width: 220px; height: 30px; line-height: 30px; background-color: #fff; color: red; text-align: center; position: fixed; left: 0; top: 0; z-index: 9999;"></div>-->
+</body>
+</html>

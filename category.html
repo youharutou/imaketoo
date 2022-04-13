@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>分类页-爱美兔</title>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/imt.js"></script>
+<script type="text/javascript" src="js/totalwf.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js" type="text/javascript"></script>
+<script src="js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript">
+var supportTouche = ("createTouch" in document);
+</script>
+<style type="text/css">
+@media screen and (min-width: 768px) {
+body, html {height: 100%; min-height: 100%; overflow: hidden; zoom: 1;}
+}
+</style>
+</head>
+
+<body>
+  <section class="md_menu visible-md visible-lg f_l">
+    <div class="menu_inner">
+      <div class="logo"><a href="#"><img src="images/logo.jpg" /></a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="current">首页</a></li>
+          <li><a href="category.html">个性潮品</a></li>
+          <li><a href="goods.html">我要制作</a></li>
+          <li><a href="usercenter.html">我的账户</a></li>
+          <li><a href="#">关于我们</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="foot">
+      <div class="u_entran">
+        <a href="login.html">登录</a>
+        <a href="register.html">注册</a>
+      </div>
+      <div class="atten">
+        <a href="#" class="sina"><img src="images/sina.png" /></a>
+        <a href="#" class="qq_zone"><img src="images/qq_zone.png" /></a>
+        <a href="#" class="txwb"><img src="images/txwb.png" /></a>
+      </div>
+      <footer><p class="copyright">©2014 imaketoo.com,All Rights Reserved.</p></footer>
+    </div>
+  </section>
+  <section class="sm_menu visible-sm">
+    <div class="col-sm-3 logo"><a href="#"><img src="images/logo.jpg" class="img-responsive" /></a></div>
+    <div class="col-sm-7">
+      <nav>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="category.html">个性潮品</a></li>
+          <li><a href="goods.html">我要制作</a></li>
+          <li>
+            <a href="javascript:void(0);" onClick="showMenu(this,event)">我的账户</a>
+            <div class="account_list">
+              <a href="usercenter.html">会员中心</a>
+              <a href="login.html">登录</a>
+              <a href="register.html">注册</a>
+            </div>
+          </li>
+          <li><a href="#">关于我们</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-sm-2 atten" style="padding:0 !important;">
+      <a href="#" class="txwb"><img src="images/txwb.png" /></a>
+      <a href="#" class="qq_zone"><img src="images/qq_zone.png" /></a>
+      <a href="#" class="sina"><img src="images/sina.png" /></a>
+    </div>
+  </section>
+  <section class="xs_menu visible-xs clearfix blank3" style="margin-bottom: 0 !important;">
+    <div class="row no_margin">
+      <div class="col-xs-8 logo col-xs-offset-2"><a href="#"><img src="images/logo.jpg" class="img-responsive" /></a></div>
+    </div>
+    <div class="menu_trigger"><a href="javascript:void(0);" class="menu_icon"><span>Menu</span></a></div>
+    <div class="xs_menu_list col-xs-12">
+      <ul>
+        <li><a href="index.html" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">首页</a></li>
+        <li><a href="category.html">个性潮品</a></li>
+        <li><a href="goods.html">我要制作</a></li>
+        <li><a href="usercenter.html">我的账户</a></li>
+        <li><a href="#" style="border-bottom:none; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">关于我们</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="md_main_part visible-sm visible-md visible-lg section category f_r">
+    <div class="row no_margin">
+      <div class="col-md-12 col-sm-12 md_recom_listen recom_goods no_padding">
+        <div class="rc_win">
+          <ul class="rc_handle">
+            <li class="prev_h"></li>
+            <li class="next_h"></li>
+          </ul>
+          <ul class="rc_list clearfix">
+            <li>
+              <a href="#"><img src="images/goods_img06.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/goods_img05.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/goods_album_01.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/art_thumb09.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/goods_img03.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/goods_img01.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 cat_list_bar no_padding">
+        <div class="fixed_bar">
+          <div class="order clearfix">
+            <div class="f_l">排序：</div>
+            <div class="sort_by f_l">
+              <a href="#" class="current">时间</a>
+              <a href="#">价格</a>
+              <a href="#">销量</a>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="cat_toggle">所有分类<span></span></a>
+          <div class="cat_list">
+            <div class="cat_list_box">
+              <a href="#">相册</a>
+              <a href="#">T恤</a>
+              <a href="#">个性水杯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 goods_list no_padding">
+        <div class="row no_margin">
+          <div class="col-md-12 col-sm-12 md_goods_list_box no_padding blank4">
+            <ul>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img10.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Uniform Wares 经典104黑色系列</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img11.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Coloured Wooden desk 北欧风格 复古 木质工作台</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img22.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Birch Plywood Necklace 简约设计 桦木项链 </a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img13.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Not a Replica 复古剃须刀</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img14.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> ChokStick 新年大骚包 Large (2件装)</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img15.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img16.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img17.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img18.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img19.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img20.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Uniform Wares 经典104黑色系列</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img21.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Coloured Wooden desk 北欧风格 复古 木质工作台</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img12.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Birch Plywood Necklace 简约设计 桦木项链 </a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img23.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Not a Replica 复古剃须刀</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img24.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> ChokStick 新年大骚包 Large (2件装)</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img25.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img29.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img27.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img28.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="md_goods_list">
+                <a href="javascript:void(0);"><img src="images/goods_img26.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="xs_main_part visible-xs">
+    <div class="row no_margin">
+      <div class="col-xs-12 xs_recom_listen recom_goods no_padding">
+        <div class="rc_win">
+          <ul class="rc_handle">
+            <li class="prev_h"></li>
+            <li class="next_h"></li>
+          </ul>
+          <ul class="rc_list clearfix">
+            <li>
+              <a href="#"><img src="images/goods_img06.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/goods_img05.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/goods_album_01.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/art_thumb09.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/goods_img03.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/goods_img01.jpg" class="rc_img" /></a>
+              <a href="#" class="title">象牙白文艺范儿咖啡杯<br /><em>¥799</em></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 cat_list_bar no_padding">
+        <div class="fixed_bar">
+          <div class="order clearfix">
+            <div class="f_l">排序：</div>
+            <div class="sort_by f_l">
+              <a href="#" class="current">时间</a>
+              <a href="#">价格</a>
+              <a href="#">销量</a>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="cat_toggle">所有分类<span></span></a>
+          <div class="cat_list">
+            <div class="cat_list_box">
+              <a href="#">相册</a>
+              <a href="#">T恤</a>
+              <a href="#">个性水杯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 goods_list no_padding">
+        <div class="row no_margin">
+          <div class="col-xs-12 xs_goods_list_box">
+            <ul>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img10.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Uniform Wares 经典104黑色系列</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img11.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Coloured Wooden desk 北欧风格 复古 木质工作台</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img22.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Birch Plywood Necklace 简约设计 桦木项链 </a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img13.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Not a Replica 复古剃须刀</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img14.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> ChokStick 新年大骚包 Large (2件装)</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img15.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img16.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img17.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img18.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img19.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img20.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Uniform Wares 经典104黑色系列</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img21.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Coloured Wooden desk 北欧风格 复古 木质工作台</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img12.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Birch Plywood Necklace 简约设计 桦木项链 </a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img23.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Not a Replica 复古剃须刀</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img24.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> ChokStick 新年大骚包 Large (2件装)</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img25.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img29.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img27.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img28.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+              <li class="xs_goods_list blank4">
+                <a href="javascript:void(0);"><img src="images/goods_img26.jpg" /></a>
+                <div class="markbox clearfix">
+                  <div class="vote_count"><i></i><span class="num">23</span></div>
+                  <em>￥1220</em>
+                </div>
+                <h4 class="title"><a href="#"> Wanderlust Wooden Sign "流浪" 木牌</a></h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="xs_foot visible-xs clearfix">
+      <div class="col-xs-12 u_entran">
+        <a href="login.html">登录</a>
+        <a href="register.html">注册</a>
+      </div>
+      <div class="col-xs-12 atten">
+        <a href="#" class="sina"><img src="images/xs_sina.png" /></a>
+        <a href="#" class="qq_zone"><img src="images/xs_qq_zone.png" /></a>
+        <a href="#" class="txwb"><img src="images/xs_txwb.png" /></a>
+      </div>
+      <div class="col-xs-12">©2014 imaketoo.com,All Rights Reserved.</div>
+  </section>
+<script type="text/javascript" src="js/cat.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".menu_trigger").click(function(event){
+		$(".xs_menu_list").fadeToggle(200);
+		event.stopPropagation();
+	});
+	$(".atten a").hover(function(){
+		$("img",this).stop().fadeOut(300);
+	},function(){
+		$("img",this).fadeIn(300);
+	});
+	$(".cat_toggle").click(function(){
+		if($(this).next().is(":hidden")){
+			cateUnfold(catlistH,osTop,scrollelem,overH);
+		}
+		else {
+			cateShrink(catlistH,osTop,scrollelem,overH);
+		}
+		$(".cat_list").slideToggle(200);
+	});
+	$("body").click(function(){
+		$(".xs_menu_list,.account_list").hide();
+		$(".account_list").prev().removeClass("current");
+	});
+});
+</script>
+<!--<div class="testdatas" style="width: 220px; height: 30px; line-height: 30px; background-color: #fff; color: red; text-align: center; position: fixed; left: 0; top: 0; z-index: 9999;"></div>-->
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>爱美兔</title>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/imt.js"></script>
+<script type="text/javascript" src="js/totalwf.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js" type="text/javascript"></script>
+<script src="js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript">
+var supportTouche = ("createTouch" in document);
+</script>
+<style type="text/css">
+@media screen and (min-width: 768px) {
+body, html {height: 100%; min-height: 100%; overflow: hidden; zoom: 1;}
+}
+</style>
+</head>
+
+<body>
+  <section class="md_menu visible-md visible-lg f_l">
+    <div class="menu_inner">
+      <div class="logo"><a href="#"><img src="images/logo.jpg" /></a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="current">首页</a></li>
+          <li><a href="category.html">个性潮品</a></li>
+          <li><a href="goods.html">我要制作</a></li>
+          <li><a href="usercenter.html">我的账户</a></li>
+          <li><a href="#">关于我们</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="foot">
+      <div class="u_entran">
+        <a href="login.html">登录</a>
+        <a href="register.html">注册</a>
+      </div>
+      <div class="atten">
+        <a href="#" class="sina"><img src="images/sina.png" /></a>
+        <a href="#" class="qq_zone"><img src="images/qq_zone.png" /></a>
+        <a href="#" class="txwb"><img src="images/txwb.png" /></a>
+      </div>
+      <footer><p class="copyright">©2014 imaketoo.com,All Rights Reserved.</p></footer>
+    </div>
+  </section>
+  <section class="sm_menu visible-sm">
+    <div class="col-sm-3 logo"><a href="#"><img src="images/logo.jpg" class="img-responsive" /></a></div>
+    <div class="col-sm-7">
+      <nav>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="category.html">个性潮品</a></li>
+          <li><a href="goods.html">我要制作</a></li>
+          <li>
+            <a href="javascript:void(0);" onClick="showMenu(this,event)">我的账户</a>
+            <div class="account_list">
+              <a href="usercenter.html">会员中心</a>
+              <a href="login.html">登录</a>
+              <a href="register.html">注册</a>
+            </div>
+          </li>
+          <li><a href="#">关于我们</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-sm-2 atten" style="padding:0 !important;">
+      <a href="#" class="txwb"><img src="images/txwb.png" /></a>
+      <a href="#" class="qq_zone"><img src="images/qq_zone.png" /></a>
+      <a href="#" class="sina"><img src="images/sina.png" /></a>
+    </div>
+  </section>
+  <section class="xs_menu visible-xs clearfix blank3">
+    <div class="row no_margin">
+      <div class="col-xs-8 logo col-xs-offset-2"><a href="#"><img src="images/logo.jpg" class="img-responsive" /></a></div>
+    </div>
+    <div class="menu_trigger"><a href="javascript:void(0);" class="menu_icon"><span>Menu</span></a></div>
+    <div class="xs_menu_list col-xs-12">
+      <ul>
+        <li><a href="index.html" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">首页</a></li>
+        <li><a href="category.html">个性潮品</a></li>
+        <li><a href="goods.html">我要制作</a></li>
+        <li><a href="usercenter.html">我的账户</a></li>
+        <li><a href="#" style="border-bottom:none; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">关于我们</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="md_main_part visible-md visible-lg f_r height_full">
+    <div class="row no_margin height_full">
+      <div class="col-md-6 border_r_1 no_padding height_full banner_box">
+        <div class="banner">
+          <h3 class="hd tc">今天最潮品</h3>
+          <div class="ban_win">
+            <ul class="ban_handle">
+              <li class="current"></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="ban_list clearfix">
+              <li>
+                <div class="ban_img">
+                  <a href="#"><img src="images/goods_img01.jpg" class="width_full" /></a>
+                  <span class="abs_price gs_price">¥799</span>
+                </div>
+                <div class="title tr"><a href="#">象牙白文艺范儿咖啡杯</a></div>
+              </li>
+              <li>
+                <div class="ban_img">
+                  <a href="#"><img src="images/goods_img02.jpg" class="width_full" /></a>
+                  <span class="abs_price gs_price">¥799</span>
+                </div>
+                <div class="title tr"><a href="#">象牙白文艺范儿咖啡杯</a></div>
+              </li>
+              <li>
+                <div class="ban_img">
+                  <a href="#"><img src="images/goods_img03.jpg" class="width_full" /></a>
+                  <span class="abs_price gs_price">¥799</span>
+                </div>
+                <div class="title tr"><a href="#">象牙白文艺范儿咖啡杯</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section col-md-6 art_list height_full">
+        <div class="row no_margin">
+          <h3 class="hd"><strong>潮人潮品<span>CHAO</span></strong></h3>
+          <div class="col-md-12 md_index_goodslist_box no_padding blank4">
+            <ul>
+              <li class="md_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb01.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>06</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+                <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+              </li>
+              <li class="md_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb02.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>08</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+                <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+              </li>
+              <li class="md_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb03.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>13</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+                <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+              </li>
+              <li class="md_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb04.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>16</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+                <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+              </li>
+              <li class="md_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb05.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>19</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+                <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+              </li>
+              <li class="md_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb06.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>22</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+                <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+              </li>
+              <li class="md_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb07.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>27</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+                <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+              </li>
+              <li class="md_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb08.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">2月<br /><span>04</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+                <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+              </li>
+              <li class="md_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb09.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">2月<br /><span>11</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+                <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+              </li>
+              <li class="md_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb10.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">2月<br /><span>15</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+                <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-12 read_more_box blank4">
+            <a href="#" class="read_more">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="sm_main_part visible-sm width_full">
+    <div class="row no_margin height_full">
+      <div class="col-sm-6 border_r_1 no_padding height_full banner_box padtransverse">
+        <div class="banner">
+          <h3 class="hd tc">今天最潮品</h3>
+          <div class="ban_win">
+            <ul class="ban_handle">
+              <li class="current"></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="ban_list clearfix">
+              <li>
+                <div class="ban_img">
+                  <a href="#"><img src="images/goods_img01.jpg" class="width_full" /></a>
+                  <span class="abs_price gs_price">¥79</span>
+                </div>
+                <div class="title tr"><a href="#">象牙白文艺范儿咖啡杯</a></div>
+              </li>
+              <li>
+                <div class="ban_img">
+                  <a href="#"><img src="images/goods_img02.jpg" class="width_full" /></a>
+                  <span class="abs_price gs_price">¥79</span>
+                </div>
+                <div class="title tr"><a href="#">象牙白文艺范儿咖啡杯</a></div>
+              </li>
+              <li>
+                <div class="ban_img">
+                  <a href="#"><img src="images/goods_img03.jpg" class="width_full" /></a>
+                  <span class="abs_price gs_price">¥79</span>
+                </div>
+                <div class="title tr"><a href="#">象牙白文艺范儿咖啡杯</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 border_r_1 no_padding height_full banner_box padvertical">
+        <div class="banner">
+          <h3 class="hd tc">今天最潮品</h3>
+          <div class="ban_win">
+            <ul class="v_ban_handle">
+              <li class="prev_h"></li>
+              <li class="next_h"></li>
+            </ul>
+            <ul class="v_ban_list clearfix">
+              <li>
+                <div class="ban_img">
+                  <a href="#"><img src="images/goods_img01.jpg" class="width_full" /></a>
+                  <span class="abs_price gs_price">¥79</span>
+                </div>
+              </li>
+              <li>
+                <div class="ban_img">
+                  <a href="#"><img src="images/goods_img23.jpg" class="width_full" /></a>
+                  <span class="abs_price gs_price">¥79</span>
+                </div>
+              </li>
+              <li>
+                <div class="ban_img">
+                  <a href="#"><img src="images/goods_img03.jpg" class="width_full" /></a>
+                  <span class="abs_price gs_price">¥79</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section col-sm-6 art_list height_full">
+        <div class="row no_margin">
+          <h3 class="hd"><strong>潮人潮品<span>CHAO</span></strong></h3>
+          <div class="col-sm-12 sm_index_goodslist_box no_padding blank4">
+            <ul>
+              <li class="sm_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb01.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>06</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+                <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+              </li>
+              <li class="sm_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb02.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>08</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+                <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+              </li>
+              <li class="sm_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb03.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>13</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+                <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+              </li>
+              <li class="sm_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb04.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>16</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+                <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+              </li>
+              <li class="sm_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb05.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>19</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+                <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+              </li>
+              <li class="sm_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb06.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>22</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+  
+                <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+              </li>
+              <li class="sm_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb07.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">1月<br /><span>27</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+                <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+              </li>
+              <li class="sm_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb08.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">2月<br /><span>04</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+                <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+              </li>
+              <li class="sm_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb09.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">2月<br /><span>11</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+                <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+              </li>
+              <li class="sm_index_goodslist">
+                <div class="art_thumb">
+                  <a href="#"><img src="images/art_thumb10.jpg" class="width_full" /></a>
+                  <div class="add_time abs_price">2月<br /><span>15</span></div>
+                </div>
+                <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+                <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+                <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 read_more_box blank4">
+            <a href="#" class="read_more">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="xs_main_part visible-xs">
+    <div class="row">
+      <div class="col-xs-12 xs_banner blank4">
+        <div class="ban_win">
+          <ul class="ban_handle">
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class="ban_list clearfix">
+            <li>
+              <div class="title tc"><a href="#">象牙白文艺范儿咖啡杯</a></div>
+              <div class="ban_img">
+                <a href="#"><img src="images/goods_img01.jpg" class="width_full" /></a>
+                <span class="abs_price gs_price">¥799</span>
+              </div>
+            </li>
+            <li>
+              <div class="title tc"><a href="#">象牙白文艺范儿咖啡杯</a></div>
+              <div class="ban_img">
+                <a href="#"><img src="images/goods_img02.jpg" class="width_full" /></a>
+                <span class="abs_price gs_price">¥799</span>
+              </div>
+            </li>
+            <li>
+              <div class="title tc"><a href="#">象牙白文艺范儿咖啡杯</a></div>
+              <div class="ban_img">
+                <a href="#"><img src="images/goods_img03.jpg" class="width_full" /></a>
+                <span class="abs_price gs_price">¥799</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row xs_art_list">
+      <div class="col-xs-12"><h3 class="hd tc"><strong style="padding:0;">潮人潮品<span>CHAO</span></strong></h3></div>
+      <div class="col-xs-12 blank4">
+        <div class="art_thumb">
+          <a href="#"><img src="images/art_thumb01.jpg" class="width_full" /></a>
+          <div class="add_time abs_price">1月<br /><span>06</span></div>
+        </div>
+        <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+        <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+        <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+      </div>
+      <div class="col-xs-12 blank4">
+        <div class="art_thumb">
+          <a href="#"><img src="images/art_thumb02.jpg" class="width_full" /></a>
+          <div class="add_time abs_price">1月<br /><span>08</span></div>
+        </div>
+        <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+        <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+        <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+      </div>
+      <div class="col-xs-12 blank4">
+        <div class="art_thumb">
+          <a href="#"><img src="images/art_thumb03.jpg" class="width_full" /></a>
+          <div class="add_time abs_price">1月<br /><span>13</span></div>
+        </div>
+        <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+        <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+        <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+      </div>
+      <div class="col-xs-12 blank4">
+        <div class="art_thumb">
+          <a href="#"><img src="images/art_thumb04.jpg" class="width_full" /></a>
+          <div class="add_time abs_price">1月<br /><span>16</span></div>
+        </div>
+        <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+        <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+        <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+      </div>
+      <div class="col-xs-12 blank4">
+        <div class="art_thumb">
+          <a href="#"><img src="images/art_thumb05.jpg" class="width_full" /></a>
+          <div class="add_time abs_price">1月<br /><span>19</span></div>
+        </div>
+        <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+        <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+        <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+      </div>
+      <div class="col-xs-12 blank4">
+        <div class="art_thumb">
+          <a href="#"><img src="images/art_thumb06.jpg" class="width_full" /></a>
+          <div class="add_time abs_price">1月<br /><span>22</span></div>
+        </div>
+        <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+        <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+
+        <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+      </div>
+      <div class="col-xs-12 blank4">
+        <div class="art_thumb">
+          <a href="#"><img src="images/art_thumb07.jpg" class="width_full" /></a>
+          <div class="add_time abs_price">1月<br /><span>27</span></div>
+        </div>
+        <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+        <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+        <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+      </div>
+      <div class="col-xs-12 blank4">
+        <div class="art_thumb">
+          <a href="#"><img src="images/art_thumb08.jpg" class="width_full" /></a>
+          <div class="add_time abs_price">2月<br /><span>04</span></div>
+        </div>
+        <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+        <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+        <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+      </div>
+      <div class="col-xs-12 blank4">
+        <div class="art_thumb">
+          <a href="#"><img src="images/art_thumb09.jpg" class="width_full" /></a>
+          <div class="add_time abs_price">2月<br /><span>11</span></div>
+        </div>
+        <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+        <div class="title"><a href="#">不断求学的"剪刀手"Ellen 和他的 EG Studio</a></div>
+        <div class="descr">这次专访的是一位30出头的独立发型设计师 Ellen，他有今天的技术功底和创意概念，全凭他有一颗好学上进的心。</div>
+      </div>
+      <div class="col-xs-12 blank4">
+        <div class="art_thumb">
+          <a href="#"><img src="images/art_thumb10.jpg" class="width_full" /></a>
+          <div class="add_time abs_price">2月<br /><span>15</span></div>
+        </div>
+        <div class="counts clearfix"><a href="#"><i class="ico_comment"></i>3</a><a href="#" class="comment_num"><i class="ico_view"></i>186</a></div>
+        <div class="title"><a href="#">Derringer Cycles: 摩托车界的混血儿</a></div>
+        <div class="descr">设计师 Adrian Van Anz 以复古混搭风格为灵感，将上世纪20年代盛极一时的摩托车和自行车结合，打造出 Derringer Cycles 复古式摩托车，摩托车界的混血儿。</div>
+      </div>
+      <div class="col-xs-12"><a href="#" class="col-xs-12 xs_read_more blank6">READ MORE</a></div>
+    </div>
+  </section>
+  
+  <section class="xs_foot visible-xs clearfix">
+      <div class="col-xs-12 u_entran">
+        <a href="login.html">登录</a>
+        <a href="register.html">注册</a>
+      </div>
+      <div class="col-xs-12 atten">
+        <a href="#" class="sina"><img src="images/xs_sina.png" /></a>
+        <a href="#" class="qq_zone"><img src="images/xs_qq_zone.png" /></a>
+        <a href="#" class="txwb"><img src="images/xs_txwb.png" /></a>
+      </div>
+      <div class="col-xs-12">©2014 imaketoo.com,All Rights Reserved.</div>
+  </section>
+<script type="text/javascript">
+$(function(){
+	$(".menu_trigger").click(function(event){
+		$(".xs_menu_list").fadeToggle(200);
+		event.stopPropagation();
+	});
+	$(".atten a").hover(function(){
+		$("img",this).stop().fadeOut(300);
+	},function(){
+		$("img",this).fadeIn(300);
+	});
+	$("body").click(function(){
+		$(".xs_menu_list,.account_list").hide();
+		$(".account_list").prev().removeClass("current");
+	});
+});
+</script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
